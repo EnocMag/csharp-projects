@@ -10,6 +10,7 @@ namespace ConectaDbEf
     public class TiendaDbContext : DbContext
     {
         public DbSet<Cliente> Clientes { get; set; }
+        // DbSet<Cliente> Clientes representa una tabla de Cliente en la base de datos.
         public DbSet<Empleado> Empleados { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
